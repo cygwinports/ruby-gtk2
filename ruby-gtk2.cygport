@@ -1,0 +1,7 @@
+NAME="ruby-gtk2"
+VERSION=1.1.5
+RELEASE=1
+inherit rubygem
+
+
+DEPS_PATH="/usr/lib/ruby/gems/${RUBY_VERSION}/gems/cairo-*/lib:/usr/lib/ruby/gems/${RUBY_VERSION}/gems/glib2-*/lib:/usr/lib/ruby/gems/${RUBY_VERSION}/gems/pango-*/lib"
