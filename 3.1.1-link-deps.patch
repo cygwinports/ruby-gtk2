@@ -1,0 +1,11 @@
+--- origsrc/gtk2-3.1.1/ext/gtk2/extconf.rb	2017-03-19 17:26:08.376734600 -0500
++++ src/gtk2-3.1.1/ext/gtk2/extconf.rb	2017-03-19 17:52:14.974302300 -0500
+@@ -33,7 +33,7 @@ end
+ 
+ have_func("rb_errinfo")
+ 
+-["glib2", "atk", "pango", "gdk_pixbuf2"].each do |package|
++["glib2", "atk", "pango"].each do |package|
+   directory = "#{package}#{version_suffix}"
+   build_dir = "#{directory}/tmp/#{RUBY_PLATFORM}/#{package}/#{RUBY_VERSION}"
+   add_depend_package(package, "#{directory}/ext/#{package}",
