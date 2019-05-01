@@ -1,0 +1,14 @@
+These are now GI-based and no longer provide a C API
+
+--- origsrc/gtk2-3.2.4/ext/gtk2/extconf.rb	2018-04-25 23:58:29.573168800 -0500
++++ src/gtk2-3.2.4/ext/gtk2/extconf.rb	2018-04-26 00:38:17.620663800 -0500
+@@ -35,9 +35,7 @@ have_func("rb_errinfo")
+ 
+ [
+   "glib2",
+-  "atk",
+   "pango",
+-  "gdk_pixbuf2",
+   "gobject-introspection",
+ ].each do |package|
+   directory = "#{package}#{version_suffix}"
